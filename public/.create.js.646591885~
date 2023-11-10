@@ -1,0 +1,19 @@
+function go(){
+  var pollName = document.getElementById("n").value;
+  var pollDes = document.getElementById("d").value;
+
+  var pollOpts = document.getElementById("opts").value;
+
+  var options = pollOpts.split(",");
+  var res = await fetch("/create",{
+    method: "POST",
+    headers:{
+      "Content-Type":"application/json"
+    },
+    body:JSON.stringify({
+      pollName,
+      pollDes,
+      options
+    })
+  })
+}

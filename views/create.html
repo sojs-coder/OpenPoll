@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Polling Website</title>
+  <style>
+    #map { height: 500px; }
+    form{
+      border: 1px solid black;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    .options{
+      margin-bottom: 10px;
+    }
+    .optGroup{
+      display: block;
+      background-color: #cccccc;
+      border: 1px solid #aaa;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    input{
+      display: block;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to the Polling Website! (Create Poll)</h1>
+    <label for = "pollName">Name of Poll</label><input id = "n" name = "pollName" required><br>
+    <label for = "pollDes">Description of Poll</label><input id = "d" name = "pollDes" required>
+    <h3>Options</h3>
+    <p>Separate each option with ",". No space</p>
+    <input name = "options" id = "opts">
+    <button id = "sub">Create</button>
+  <script src = "/create.js"></script>
+</body>  
+</html>
